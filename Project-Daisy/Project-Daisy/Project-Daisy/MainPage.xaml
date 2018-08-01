@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project_Daisy"
+             x:Class="Project_Daisy.MainPage">
+
+    <Grid Padding="14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Column="0">
+            <Label Text="Project Daisy" FontSize="Medium" />
+        </StackLayout>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" Padding="7">
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnAlbums" Text="Albums" />
+            <Button Grid.Row="0" Grid.Column="1" x:Name="btnBooks" Text="Books" />
+            <Button Grid.Row="1" Grid.Column="0" x:Name="btnGames" Text="Games" />
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btnMovies" Text="Movies" />
+        </Grid>
+    </Grid>
+</ContentPage>
