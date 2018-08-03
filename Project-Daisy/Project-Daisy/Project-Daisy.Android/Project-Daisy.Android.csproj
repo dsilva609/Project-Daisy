@@ -3,9 +3,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{351E5469-6877-4120-85A9-9FEAE04CE7A9}</ProjectGuid>
+    <ProjectGuid>{D6263D6C-5BAD-4BAE-ADC3-C2DB4AE27DE8}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <TemplateGuid>{6968b3a4-1835-46a3-ac5c-1ae33b475983}</TemplateGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Project_Daisy.Droid</RootNamespace>
     <AssemblyName>Project-Daisy.Android</AssemblyName>
@@ -59,7 +59,6 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ItemService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -83,21 +82,21 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Project-Daisy\Project-Daisy.csproj">
-      <Project>{F910E8DC-9810-4C8C-BDAB-42F54160C063}</Project>
+      <Project>{7A75A2A2-39AC-4536-8377-8953426D0C8E}</Project>
       <Name>Project-Daisy</Name>
     </ProjectReference>
     <ProjectReference Include="..\Project_Daisy\Project_Daisy.csproj">
-      <Project>{747A91D3-5525-475A-801B-BB4321AD58AE}</Project>
+      <Project>{944DA5B8-021E-46B6-8CD1-1D40DCE6B397}</Project>
       <Name>Project_Daisy</Name>
     </ProjectReference>
   </ItemGroup>

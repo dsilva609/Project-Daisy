@@ -1,36 +1,35 @@
-using Project_Daisy.Services.Interfaces;
-using System;
+﻿using System;
 using Xamarin.Forms;
+using Project_Daisy.Views;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-
+[assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace Project_Daisy
 {
-    public partial class App : Application
-    {
-        public static Func<IItemService> CreateItemService { get; set; }
+	public partial class App : Application
+	{
+		
+		public App ()
+		{
+			InitializeComponent();
 
-        public App()
-        {
-            InitializeComponent();
 
-            MainPage = new MainPage();
-        }
+			MainPage = new MainPage();
+		}
 
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
+		protected override void OnStart ()
+		{
+			// Handle when your app starts
+		}
 
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
+		protected override void OnSleep ()
+		{
+			// Handle when your app sleeps
+		}
 
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
-        }
-    }
+		protected override void OnResume ()
+		{
+			// Handle when your app resumes
+		}
+	}
 }

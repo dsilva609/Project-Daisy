@@ -1,7 +1,11 @@
-﻿using Android.App;
+﻿using System;
+
+using Android.App;
 using Android.Content.PM;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
 using Android.OS;
-using Project_Daisy.Droid.Services;
 
 namespace Project_Daisy.Droid
 {
@@ -16,10 +20,8 @@ namespace Project_Daisy.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-
-            App.CreateItemService = () => new ItemService();
-
             LoadApplication(new App());
         }
     }
 }
+
