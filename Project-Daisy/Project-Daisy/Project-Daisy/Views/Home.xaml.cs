@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace Project_Daisy.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : TabbedPage
+    public partial class Home : ContentPage
     {
-        public MainPage()
+        public Home()
         {
             InitializeComponent();
         }

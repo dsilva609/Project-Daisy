@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Project_Daisy.Views.MenuPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Project-Daisy" TextColor="Orange" HorizontalTextAlignment="Center" FontSize="24"></Label>
+            <Button Text="Home" TextColor="White" BackgroundColor="DeepSkyBlue" Command="{Binding GoHomeCommand}" />
+            <Button Text="Second Page" TextColor="White" BackgroundColor="DeepSkyBlue" Command="{Binding GoSecondCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
