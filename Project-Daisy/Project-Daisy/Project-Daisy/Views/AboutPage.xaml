@@ -74,7 +74,8 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <Label Text="{Binding Description}"></Label>
+                            <Label Text="{Binding Artist}"></Label>
+                            <Label Text="{Binding Title}"></Label>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
