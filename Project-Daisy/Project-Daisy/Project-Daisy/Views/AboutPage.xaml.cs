@@ -18,7 +18,7 @@ namespace Project_Daisy.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            var client = new RestClient("http://cinderellacoreapi.azurewebsites.net");
+            var client = new RestClient("http://cinderellacore.azurewebsites.net");
             var request = new RestRequest("api/showcase/getshowcaseditems/1", Method.GET);
             request.AddHeader("Authorization", "p6UUHC2+wuS-YAaS");
             request.AddHeader("Accept", "appliction/json");
